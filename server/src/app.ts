@@ -2,6 +2,10 @@ import 'reflect-metadata';
 import express from 'express';
 import 'dotenv/config';
 import cors from 'cors';
+import {createConnection} from "typeorm";
+
+import {config} from "./config";
+import {apiRouter} from "./routes";
 
 
 const app = express();
@@ -13,10 +17,22 @@ app.use((req, res, next) => {
     next();
 });
 app.use(cors());
+app.use(apiRouter);
 
 
-app.listen(7000, () => {
-    console.log('Server started on PORT: 7000!!');
+
+
+const {PORT} = config;
+app.listen(PORT, async () => {
+    console.log(`Server started on PORT: ${PORT}!!`);
+    try {
+        const connection = await createConnection();
+        if (connection) {
+            console.log('Database connection!');
+        }
+    } catch (err) {
+        if (err) console.log(err);
+    }
 })
 
 
