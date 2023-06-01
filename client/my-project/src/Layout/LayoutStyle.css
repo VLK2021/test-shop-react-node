@@ -4,13 +4,14 @@
 
 .main{
     margin-top: 1rem;
+    align-items: start;
 }
 
 .main-menu{
     width: 20%;
+    padding-top: 1rem;
 }
 
 .main-outlet{
     width: 80%;
-    background: blue;
 }

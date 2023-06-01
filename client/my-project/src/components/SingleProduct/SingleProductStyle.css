@@ -1,0 +1,53 @@
+.singleProduct {
+    width: 30%;
+    height: 30rem;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--var-bg-button);
+    background: snow;
+}
+
+.singleProduct-img{
+    width: 100%;
+    height: 15rem;
+}
+
+.singleProduct-img > img{
+    width: 100%;
+    height: 100%;
+}
+
+.singleProduct-block-price{
+    justify-content: space-around;
+}
+
+.singleProduct > p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: midnightblue;
+}
+
+.singleProduct-block-price > p{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+    font-size: 2.2rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+.singleProduct-block-price > div{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+    font-size: 2.2rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+.singleProduct-btn > button{
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}

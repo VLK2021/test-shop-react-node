@@ -1,4 +1,4 @@
-import {Column} from "typeorm";
+import {Column, Entity} from "typeorm";
 
 import {CommonFields} from "./commonFields";
 
@@ -12,6 +12,7 @@ export interface IProduct {
     url: string;
 }
 
+@Entity('products', {database: 'eliftech'})
 export class Product extends CommonFields implements IProduct {
     @Column({
         type: 'varchar',
