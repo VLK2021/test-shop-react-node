@@ -1,0 +1,25 @@
+.userFormComponent {
+    text-align: center;
+    background: gainsboro;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.userFormComponent > p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.text-start{
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

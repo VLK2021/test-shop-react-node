@@ -1,3 +1,46 @@
 .shoppingCard {
-    background: snow;
+    margin-left: 0.8rem;
+}
+
+.shoppingCard-title-text {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: green;
+}
+
+.shoppingCard-info {
+    align-items: start;
+}
+
+.shoppingCard-price {
+    justify-content: end;
+    margin-top: 2rem;
+}
+
+.shoppingCard-info-form {
+    width: 30%;
+    padding: 0.5rem;
+}
+
+.shoppingCard-info-product {
+    width: 70%;
+    padding: 0.5rem;
+}
+
+.shoppingCard-price > p {
+    font-weight: bold;
+    font-size: 2rem;
+    color: skyblue;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    margin-right: 4rem;
+    text-transform: uppercase;
+}
+
+.shoppingCard-price > button {
+    width: 9rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 4rem;
+    text-align: center;
 }

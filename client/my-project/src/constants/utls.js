@@ -1,4 +1,5 @@
 export const urls = {
     titles: '/titles',
-    products: '/products'
+    products: '/products',
+    cart: '/cart'
 }

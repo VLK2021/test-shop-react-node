@@ -24,7 +24,7 @@ function App() {
                     <Route path={'4'} element={<DrinksComponent/>}/>
                     <Route path={'5'} element={<SushiComponents/>}/>
                     <Route path={'6'} element={<DesertsComponent/>}/>
-                    <Route path={'card'} element={<ShoppingCard/>}/>
+                    <Route path={'/card'} element={<ShoppingCard/>}/>
                 </Route>
             </Routes>
         </main>
