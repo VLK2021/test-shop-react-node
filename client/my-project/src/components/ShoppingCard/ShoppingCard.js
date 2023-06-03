@@ -1,20 +1,21 @@
 import React, {useState} from 'react';
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 import './ShoppingCardStyle.css';
 import SingleShoppingCard from "../SingleShoppingCard/SingleShoppingCard";
 import UserFormComponent from "../UserFormComponent/UserFormComponent";
+import {cartActions} from "../../store/slices/cart.slice";
 
 
 const ShoppingCard = () => {
     const {cartArr, totalPrice} = useSelector(store => store.cart);
     const [formData, setFormData] = useState();
+    const dispatch = useDispatch();
 
 
     const handleSubmit = async () => {
         const order = JSON.stringify({...cartArr, totalPrice, formData});
         console.log(order);
-
         //отак записуємо дані в базу даних. Просто я не створив базу під ордери на бекенді але створюється вона
         // аналогічно до тих які є створені
         // await cartService.postOrder(order)
@@ -23,6 +24,8 @@ const ShoppingCard = () => {
         //             alert('order was created!')
         //         }
         //     });
+
+        dispatch(cartActions.clearCart([]));
     }
 
 

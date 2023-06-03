@@ -29,12 +29,16 @@ const cartSlice = createSlice({
             } else {
                 state.cartArr = state.cartArr.filter(prod => prod.id !== action.payload.id)
             }
+        },
+
+        clearCart: (state, action) => {
+            state.cartArr = action.payload;
         }
     },
 });
 
-const {actions: {setProductInCart, delProductFromCart}} = cartSlice;
-const cartActions = {setProductInCart, delProductFromCart};
+const {actions: {setProductInCart, delProductFromCart, clearCart}} = cartSlice;
+const cartActions = {setProductInCart, delProductFromCart, clearCart};
 export {
     cartActions
 }
