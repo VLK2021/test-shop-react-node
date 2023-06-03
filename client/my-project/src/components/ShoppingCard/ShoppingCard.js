@@ -15,8 +15,9 @@ const ShoppingCard = () => {
         const order = JSON.stringify({...cartArr, totalPrice, formData});
         console.log(order);
 
-        //отак записуємо дані в базу даних. Просто я не створив базу під ордери на бекенді
-        // await productService.postOrder(order)
+        //отак записуємо дані в базу даних. Просто я не створив базу під ордери на бекенді але створюється вона
+        // аналогічно до тих які є створені
+        // await cartService.postOrder(order)
         //     .then(response => {
         //         if (response.data) {
         //             alert('order was created!')

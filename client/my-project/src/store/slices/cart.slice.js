@@ -31,8 +31,6 @@ const cartSlice = createSlice({
             }
         }
     },
-
-    extraReducers: {}
 });
 
 const {actions: {setProductInCart, delProductFromCart}} = cartSlice;
